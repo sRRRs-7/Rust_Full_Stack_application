@@ -1,0 +1,16 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = "1.20.1"
+warp = "0.3.2"
+mobc = "0.7.3"
+mobc-postgres = "0.7.0"
+serde_json = "1.0.83"
+serde = {version = "1.0.143", features = ["derive"]}
+thiserror = "1.0.32"
+common = {version = "0.1.0", path = "../common"}
