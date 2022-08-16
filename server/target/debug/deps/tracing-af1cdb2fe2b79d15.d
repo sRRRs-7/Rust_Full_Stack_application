@@ -1,0 +1,13 @@
+/Users/srrrs/App/Rust/app/fullstack/server/target/debug/deps/tracing-af1cdb2fe2b79d15.rmeta: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/macros.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/dispatcher.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/field.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/instrument.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/level_filters.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/span.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/stdlib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/subscriber.rs
+
+/Users/srrrs/App/Rust/app/fullstack/server/target/debug/deps/tracing-af1cdb2fe2b79d15.d: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/macros.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/dispatcher.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/field.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/instrument.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/level_filters.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/span.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/stdlib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/subscriber.rs
+
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/lib.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/macros.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/dispatcher.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/field.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/instrument.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/level_filters.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/span.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/stdlib.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.36/src/subscriber.rs:

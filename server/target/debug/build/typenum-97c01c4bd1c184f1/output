@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/srrrs/App/Rust/app/fullstack/server/target/debug/build/typenum-97c01c4bd1c184f1/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/srrrs/App/Rust/app/fullstack/server/target/debug/build/typenum-97c01c4bd1c184f1/out/op.rs

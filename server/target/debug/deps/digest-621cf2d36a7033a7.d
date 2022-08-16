@@ -1,0 +1,12 @@
+/Users/srrrs/App/Rust/app/fullstack/server/target/debug/deps/digest-621cf2d36a7033a7.rmeta: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/ct_variable.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/rt_variable.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/wrapper.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/xof_reader.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/digest.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/mac.rs
+
+/Users/srrrs/App/Rust/app/fullstack/server/target/debug/deps/digest-621cf2d36a7033a7.d: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/ct_variable.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/rt_variable.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/wrapper.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/xof_reader.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/digest.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/mac.rs
+
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/lib.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/ct_variable.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/rt_variable.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/wrapper.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/xof_reader.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/digest.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/mac.rs:

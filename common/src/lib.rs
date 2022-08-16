@@ -43,6 +43,7 @@ pub struct Device {
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct DeviceRequest {
     pub product: String,
+    pub owner_id: i32,
     pub maker: String,
     pub feature: String,
 }
@@ -51,15 +52,17 @@ pub struct DeviceRequest {
 pub struct DeviceResponse {
     pub id: i32,
     pub product: String,
+    pub owner_id: i32,
     pub maker: String,
     pub feature: String,
 }
 
 impl DeviceResponse {
-    fn res(device: Device) -> DeviceResponse {
+    pub fn res(device: Device) -> DeviceResponse {
         DeviceResponse {
             id: device.id,
             product: device.product,
+            owner_id: device.owner_id,
             maker: device.maker,
             feature: device.feature,
         }

@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS "owner"(
+    "id" SERIAL PRIMARY KEY NOT NULL,
+    "name" VARCHAR(255) NOT NULL);
+
+CREATE TABLE IF NOT EXISTS "device"(
+    "id" SERIAL PRIMARY KEY NOT NULL,
+    "product" VARCHAR(255) NOT NULL,
+    "owner_id" INT NOT NULL,
+    "maker" VARCHAR(255) NOT NULL,
+    "feature" VARCHAR(255) NOT NULL);
+
+ALTER TABLE "device" ADD FOREIGN KEY ("owner_id") REFERENCES "owner"("id");
