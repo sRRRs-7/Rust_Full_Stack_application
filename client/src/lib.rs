@@ -44,13 +44,13 @@ impl Component for Client {
 
     fn view(&self) -> Html {
         html! {
-            <div class={classes!("app")}>
-                <div class={classes!("nav")}>
-                    <Anchor route={AppRoute::Home}>
+            <div class=classes!("app")>
+                <div class=classes!("nav")>
+                    <Anchor route=AppRoute::Home>
                         { "Home" }
                     </Anchor>
                 </div>
-                <div class={classes!("content")}>
+                <div class=classes!("content")>
                     <Router<AppRoute, ()>
                         render = Router::render(move |switch: AppRoute| -> Html {
                             match switch {

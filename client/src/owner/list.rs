@@ -20,13 +20,13 @@ impl List {
     fn render_list(&self) -> Html {
         if let Some(t) = &self.owners {
             html! {
-                <div class={classes!("list")}>
+                <div class=classes!("list")>
                     { t.iter().map(|name| { self.view_list(name)}).collect::<Html>() }
                 </div>
             }
         } else {
             html!{
-                <div class={classes!("loading")}>
+                <div class=classes!("loading")>
                     {"loading..."}
                 </div>
             }
@@ -35,7 +35,7 @@ impl List {
 
     fn view_list(&self, owner: &OwnerResponse) -> Html {
         html!{
-            <div class={classes!("list-item")}>
+            <div class=classes!("list-item")>
                 <Anchor route={AppRoute::Detail(owner.id as i32)}>
                     { &owner.name }
                 </Anchor>

@@ -27,7 +27,7 @@ impl CreateForm {
         let edit_name = self.link.callback(move |e: InputData| Msg::EditName(e.value));
 
         html! {
-            <div class={classes!("owner-form")}>
+            <div class=classes!("owner-form")>
                 <div>
                     <input type="text" value={self.state_name.clone()} oninput={edit_name} />
                 </div>
