@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Rust Fullstack application</title>
+
+<link rel="preload" href="/client-1d9ee43ae4e8e8ff_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/client-1d9ee43ae4e8e8ff.js"></head>
+
+<body>
+    <div>
+        <p>fullstack application</p>
+    </div>
+
+
+<style>
+    body {
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #009;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: #00f;
+    }
+    
+    .app {
+        background-color: #efefef;
+        margin: 100px 25% 25% 25%;
+        width: 50%;
+        padding: 10px;
+    }
+    
+    .app .nav {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .app .refresh {
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    
+    .list-item {
+        margin: 2px;
+        padding: 5px;
+        background-color: #cfc;
+    }
+    
+    .device {
+        margin-top: 10px;
+    }
+    
+    .completed {
+        text-decoration: line-through;
+        background-color: #dedede;
+    }
+    
+    .detail {
+        font-size: 16px;
+    }
+    
+    .detail h1 {
+        font-size: 24px;
+    }
+    
+    .detail .id {
+        color: #999;
+    }
+    
+    .detail .completed {
+        color: #3f3;
+    }
+    
+    .detail .not-completed {
+        color: #f33;
+    }
+</style>
+
+<script type="module">import init from '/client-1d9ee43ae4e8e8ff.js';init('/client-1d9ee43ae4e8e8ff_bg.wasm');</script><script>(function () {
+    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    var url = protocol + '//' + window.location.host + '/_trunk/ws';
+    var poll_interval = 5000;
+    var reload_upon_connect = () => {
+        window.setTimeout(
+            () => {
+                // when we successfully reconnect, we'll force a
+                // reload (since we presumably lost connection to
+                // trunk due to it being killed, so it will have
+                // rebuilt on restart)
+                var ws = new WebSocket(url);
+                ws.onopen = () => window.location.reload();
+                ws.onclose = reload_upon_connect;
+            },
+            poll_interval);
+    };
+
+    var ws = new WebSocket(url);
+    ws.onmessage = (ev) => {
+        const msg = JSON.parse(ev.data);
+        if (msg.reload) {
+            window.location.reload();
+        }
+    };
+    ws.onclose = reload_upon_connect;
+})()
+</script></body></html>

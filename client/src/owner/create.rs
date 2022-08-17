@@ -25,6 +25,7 @@ pub enum Msg {
 impl CreateForm {
     fn render_form(&self) -> Html {
         let edit_name = self.link.callback(move |e: InputData| Msg::EditName(e.value));
+
         html! {
             <div class={classes!("owner-form")}>
                 <div>
@@ -46,6 +47,7 @@ impl Component for CreateForm {
     type Properties = ();
 
     fn create(_props: Self::Properties, link: ComponentLink<Self>) -> Self {
+        link.send_message(Msg::Req);
         Self {
             link,
             fetch: None,
@@ -71,12 +73,14 @@ impl Component for CreateForm {
                     .header("Content-Type", "application/json")
                     .body(Json(&body))
                     .expect("can make request to server");
+
                 let cb = self.link.callback(
                     |response: Response<Json<Result<OwnerResponse, anyhow::Error>>>| {
                         let Json(data) = response.into_body();
                         Msg::Resp(data)
                     },
                 );
+
                 let task = FetchService::fetch(req, cb).expect("can create task");
                 self.fetch = Some(task);
                 ()

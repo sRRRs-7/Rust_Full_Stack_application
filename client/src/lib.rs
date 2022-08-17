@@ -2,6 +2,7 @@
 
 mod owner;
 mod device;
+mod detail;
 
 use wasm_bindgen::prelude::*;
 use yew::prelude::*;
@@ -9,12 +10,11 @@ use yew_router::{components::RouterAnchor, router::Router, Switch};
 
 pub type Anchor = RouterAnchor<AppRoute>;
 
-// entry point
-struct Client {}
+struct Client {}    // entry point
 
 pub enum Msg {}
 
-#[derive(Switch, Clone, Debug)]
+#[derive(Switch, Clone, Debug, PartialEq)]
 pub enum AppRoute {
     #[to = "/"]
     Home,
@@ -22,7 +22,7 @@ pub enum AppRoute {
     Detail(i32),
     #[to = "/app/create-owner"]
     CreateOwner,
-    #[to = "/app/create-device"]
+    #[to = "/app/create-device/{i32}"]
     CreateDevice(i32),
 }
 
@@ -46,11 +46,13 @@ impl Component for Client {
         html! {
             <div class={classes!("app")}>
                 <div class={classes!("nav")}>
-                    <Anchor route={AppRoute::Home}> { "Home" } </Anchor>
+                    <Anchor route={AppRoute::Home}>
+                        { "Home" }
+                    </Anchor>
                 </div>
                 <div class={classes!("content")}>
                     <Router<AppRoute, ()>
-                        render = Router::render(move |switch: AppRoute| {
+                        render = Router::render(move |switch: AppRoute| -> Html {
                             match switch {
                                 AppRoute::Home => {
                                     html! {
@@ -66,7 +68,7 @@ impl Component for Client {
                                 AppRoute::Detail(owner_id) => {
                                     html! {
                                         <div>
-                                            <owner::detail::Detail owner_id=owner_id />
+                                            <detail::Detail owner_id=owner_id />
                                         </div>
                                     }
                                 },
