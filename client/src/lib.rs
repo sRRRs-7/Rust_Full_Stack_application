@@ -16,14 +16,14 @@ pub enum Msg {}
 
 #[derive(Switch, Clone, Debug, PartialEq)]
 pub enum AppRoute {
-    #[to = "/"]
-    Home,
-    #[to = "/app/{id}"]
-    Detail(i32),
-    #[to = "/app/create-owner"]
-    CreateOwner,
     #[to = "/app/create-device/{i32}"]
     CreateDevice(i32),
+    #[to = "/app/create-owner"]
+    CreateOwner,
+    #[to = "/app/{id}"]
+    Detail(i32),
+    #[to = "/"]
+    Home,
 }
 
 impl Component for Client {
